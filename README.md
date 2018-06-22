@@ -138,7 +138,7 @@ Result: 3 is NOT cousin of 12
 mvn test
 ```
 
--Then, you will see:
+- Then, you will see:
 
 ```bash
 [INFO]
