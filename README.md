@@ -33,7 +33,7 @@ git clone https://github.com/ivnfshz/hulu.git
 - Finally, type the following command under the directory project:
 
 ```bash
-mvn clean install
+mvn package install
 ```
 
 ## Usage Details
@@ -48,34 +48,31 @@ mvn spring-boot:run
 - Or if you prefer a different option, under the directory project type:
 
 ```bash
-cd target/
-```
-- And then:
-
-```bash
-java -jar binary-tree-0.0.1-SNAPSHOT.jar
+java -jar target/binary-tree-0.0.1.jar
 ```
 
 - Once you have run the above commands, you will be able to see the following information:
 
 ```bash
-====================================
+================================
 This is the binary tree:
 Level: 2 Node: 3
 Level: 1 Node: 5
 Level: 2 Node: 12
 Level: 0 Node: 15
+Level: 2 Node: 50
 Level: 1 Node: 66
 Level: 2 Node: 75
 ====================================
-Enter node A:
+Press "ENTER" to continue...
+
 ```
 - The above information represents the binary tree that was loaded form a property source file.
 
 - This is what the binary tree looks like in a simple draw:
 
 ```bash
-  15        <-- root.
+  	15        <-- root.
      /    \
    5       66  
   / \     /  \
@@ -85,6 +82,8 @@ Enter node A:
 - If you are interested to change the values of each node, you will find the instructions [here](https://github.com/ivnfshz/hulu#nodes)!
 
 ### Instructions
+
+- Press ENTER key to continue.
 
 - As you can see, the program asks for a **value node**.
 
@@ -111,7 +110,7 @@ Enter node B:
 50
 ====================================
 
-Result: 3 is cousin of 50
+Result: node 3 is cousin of node 50
 
 ====================================
 ```
