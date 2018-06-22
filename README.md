@@ -75,7 +75,7 @@ Enter node A:
 - This is what the binary tree looks like in a simple draw:
 
 ```bash
-  	   15    <-- root.
+  	15      <-- root.
      /    \
    5       66  
   / \     /  \
@@ -116,7 +116,7 @@ Result: 3 is cousin of 50
 ====================================
 ```
 
-- Or in case **they were not cousins**: 
+- Or in case **they were NOT cousins**: 
 
 ```bash
 Enter node A:
