@@ -1,6 +1,6 @@
 # HULU Exercise.
 
-This project contains the solution to if two nodes from a binary tree are cousins or not.
+This project contains the solution to validate if two nodes from a binary tree are cousins or not.
 
 ## Prerequisites
 
