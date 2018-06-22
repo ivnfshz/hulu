@@ -5,7 +5,7 @@
 
 	<groupId>com.hulu.excersice</groupId>
 	<artifactId>binary-tree</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>binary-tree</name>
@@ -46,8 +46,6 @@
 		    <version>3.7</version>
 		</dependency>
 	</dependencies>
-	
-
 	<build>
 		<plugins>
 			<plugin>
@@ -56,6 +54,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
