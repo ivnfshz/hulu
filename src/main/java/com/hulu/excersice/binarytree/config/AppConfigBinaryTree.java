@@ -9,7 +9,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
 @ComponentScan(basePackages = { "com.hulu.*" })
-@PropertySource("classpath:nodes.properties")
+@PropertySource("classpath:nodes")
 public class AppConfigBinaryTree {
 
 	@Value("${root.nodes}")
