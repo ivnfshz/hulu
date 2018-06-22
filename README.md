@@ -137,6 +137,24 @@ Result: 3 is NOT cousin of 12
 ```bash
 mvn test
 ```
+
+-Then, you will see:
+
+```bash
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.030 s
+[INFO] Finished at: 2018-06-22T03:19:28-05:00
+[INFO] Final Memory: 18M/309M
+[INFO] ------------------------------------------------------------------------
+```
+
 ### How to Change the Nodes' Values?
 
 - You just need to edit the next file located under directory project:
