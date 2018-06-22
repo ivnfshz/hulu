@@ -21,7 +21,6 @@ public class BinaryTreeService {
 	private TreeMap<Integer, Integer> nodes = new TreeMap<Integer, Integer>();
 	private final static Logger LOGGER = Logger.getLogger(BinaryTreeService.class.getName());
 
-
 	@Autowired
 	private BinaryTreeRepository binaryTreeRepository;
 
