@@ -1,13 +1,13 @@
-# HULU Excersice.
+# HULU Exercise.
 
-This project contains the solution to look up cousins from a binary tree.
+This project contains the solution to if two nodes from a binary tree are cousins or not.
 
 ## Prerequisites
 
-This solutio requires the following:
+This solution requires the following installed tools.
  
 * [Java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-* [Apache Maven] (https://maven.apache.org/)
+* [Apache Maven](https://maven.apache.org/)
 * [Git](https://git-scm.com/)
 
 ## Implementation
@@ -15,9 +15,8 @@ This solutio requires the following:
 This project implements the following provided libraries:
 
 * [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)
-* [spring-boot](https://spring.io/projects/spring-boot)
-* [Testing](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html)
-	>Which also contains other provided libraries.
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [Spring Testing](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html)(Which also contains other provided libraries)
 
 ## How to install it?
 
@@ -44,15 +43,17 @@ mvn clean install
 ```bash
 mvn spring-boot:run
 ```
-- Or if you prefer an different option:
-	- Under the directory project:
+- Or if you prefer a different option, under the directory project type:
+
 ```bash
 cd target/
 ```
-	- And then:
+- And then:
+
 ```bash
 java -jar binary-tree-0.0.1-SNAPSHOT.jar
 ```
+
 - Once you have run the above commands, you will be able to see the following information:
 
 ```bash
@@ -69,7 +70,7 @@ Enter node A:
 ```
 - It represents the binary tree that was loaded form a property source file. 
 
-- If you are interested to change the values of each node, you could do it [here]()!
+- If you are interested to change the values of each node, you could do it [here](https://github.com/ivnfshz/hulu#nodes)!
 
 - As you can see, the program asks for a _value node_.
 
