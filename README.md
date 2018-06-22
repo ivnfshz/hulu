@@ -20,7 +20,7 @@ This project implements the following provided libraries:
 
 ## How to install it?
 
-- Open at your preference terminal. 
+- Open at your preferred terminal. 
 
 - Download this project to your local.
 
