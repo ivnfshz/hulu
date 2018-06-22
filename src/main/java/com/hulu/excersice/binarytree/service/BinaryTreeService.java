@@ -45,18 +45,28 @@ public class BinaryTreeService {
 		System.out.println("Enter node B: ");
 		scanner = new Scanner(System.in);
 		String s2 = scanner.nextLine();
-		
+
 		try {
 			int nodeA = Integer.parseInt(s1);
 			int nodeB = Integer.parseInt(s2);
-			if(isCousins(nodeA, nodeB))
-				message = nodeA + " is cousin of " + nodeB;
+			if (isCousins(nodeA, nodeB))
+				message = "node " + nodeA + " is cousin of node " + nodeB;
 			else
-				message = nodeA + " is NOT cousin of " + nodeB;
-		} catch (Exception e) {
+				message = "node " + nodeA + " is NOT cousin of node " + nodeB;
+		} catch (NumberFormatException e) {
+			message = "The values you entered are not valid. You should type integer values.";
+			LOGGER.log(Level.SEVERE, e.getMessage());
+		}catch (Exception e) {
+			message = "An error has occurred. Please contact to support.";
 			LOGGER.log(Level.SEVERE, e.getMessage());
 		}
 		return message;
+	}
+
+	public void promptEnterKey() {
+		System.out.println("Press \"ENTER\" to continue...");
+		Scanner scanner = new Scanner(System.in);
+		scanner.nextLine();
 	}
 
 	public boolean isCousins(int a, int b) {
