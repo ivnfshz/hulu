@@ -15,7 +15,9 @@ This solution requires the following installed tools.
 This project implements the following provided libraries:
 
 * [Spring Boot](https://spring.io/projects/spring-boot)
-* [Spring Testing](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html) (Which also contains other provided libraries)
+* [Spring Testing](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html) 
+> Which also contains other provided libraries
+
 * [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)
 
 ## How to install it?
@@ -80,7 +82,7 @@ Enter node A:
  3   12  50  75  <-- probably cousins.
 ```
 
-- If you are interested to change the values of each node, you could do it [here](https://github.com/ivnfshz/hulu#nodes)!
+- If you are interested to change the values of each node, you will find the instructions [here](https://github.com/ivnfshz/hulu#nodes)!
 
 ### Instructions
 
@@ -93,13 +95,13 @@ Enter node A:
 ```
 
 - Once you have entered the first value, you will be asked to enter the next **value node** to validate them.
-	- The program will validate if those nodes are cousins based on the binary tree shown before.
 ```bash
 Enter node B:
 50
 ```
 
-- Based on the inputs and what the process had validated them in the binary tree, you will see a message with the result as the following example:
+- The program will validate if those nodes are cousins based on the binary tree shown before.
+- You will see a message with the result as the following example:
 
 ```bash
 ====================================
@@ -114,7 +116,7 @@ Result: 3 is cousin of 50
 ====================================
 ```
 
-- Or in case they were not cousins: 
+- Or in case **they were not cousins**: 
 
 ```bash
 Enter node A:
@@ -135,12 +137,12 @@ Result: 3 is NOT cousin of 12
 ```bash
 mvn test
 ```
-### Nodes
+### How to Change the Nodes' Values?
 
-- Got it! You just need to edit the next file located under directory project:
+- You just need to edit the next file located under directory project:
 
 ```bash
 src/main/resources/nodes
 ```
-> It contains a key/value format. 
-> You will need to edit the value of the **root.nodes** key at your convenience
+- It contains a key/value format. 
+- You will need to edit the value of the **root.nodes** key at your convenience
