@@ -124,7 +124,7 @@ Enter node B:
 12
 ====================================
 
-Result: 3 is NOT cousin of 12
+Result: node 3 is NOT cousin of node 12
 
 ====================================
 ``` 
