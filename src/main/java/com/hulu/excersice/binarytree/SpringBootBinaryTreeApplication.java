@@ -28,6 +28,10 @@ public class SpringBootBinaryTreeApplication implements CommandLineRunner{
 		if(StringUtils.isBlank(message)){
 			message = "An error has occured";
 		}
-		System.out.println(message);
+		System.out.println("====================================");
+		System.out.println("");
+		System.out.println("Result: " + message);
+		System.out.println("");
+		System.out.println("====================================");
 	}
 }
