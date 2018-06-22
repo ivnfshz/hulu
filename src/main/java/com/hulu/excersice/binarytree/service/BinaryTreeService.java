@@ -33,11 +33,27 @@ public class BinaryTreeService {
 		System.out.println("====================================");
 	}
 
-	public void guessCousins() {
-		System.out.println("Enter your username: ");
+	public String guessCousins() {
+		String message = "";
+		System.out.println("Enter node A: ");
 		scanner = new Scanner(System.in);
-		String username = scanner.nextLine();
-		System.out.println("Your username is " + username);
+		String s1 = scanner.nextLine();
+
+		System.out.println("Enter node B: ");
+		scanner = new Scanner(System.in);
+		String s2 = scanner.nextLine();
+		
+		try {
+			int nodeA = Integer.parseInt(s1);
+			int nodeB = Integer.parseInt(s2);
+			if(isCousins(nodeA, nodeB))
+				message = nodeA + " is cousin of " + nodeB;
+			else
+				message = nodeA + " is NOT cousin of " + nodeB;
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return message;
 	}
 
 	private boolean isCousins(int a, int b) {

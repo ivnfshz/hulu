@@ -1,5 +1,6 @@
 package com.hulu.excersice.binarytree;
 
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
@@ -22,7 +23,11 @@ public class SpringBootBinaryTreeApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		
-		System.out.println(this.binaryTreeService.isCousins(3, 75));
+		this.binaryTreeService.printBinaryTree();
+		String message = this.binaryTreeService.guessCousins();
+		if(StringUtils.isBlank(message)){
+			message = "An error has occured";
+		}
+		System.out.println(message);
 	}
 }
