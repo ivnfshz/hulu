@@ -1,7 +1,5 @@
 package com.hulu.excersice.binarytree.service;
 
-import java.util.logging.Logger;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
