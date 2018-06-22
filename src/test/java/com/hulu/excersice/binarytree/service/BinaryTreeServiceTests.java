@@ -22,11 +22,13 @@ public class BinaryTreeServiceTests {
 	
 	@Test
 	public void isCousinsEqualsFalse() {
-		Assert.assertFalse(this.binaryTreeService.isCousins(3, 12));
+		Assert.assertFalse ("Test failed. We are wainting a true result.", 
+				this.binaryTreeService.isCousins(3, 12));
 	}
 
 	@Test
 	public void isCousinsEqualsTrue() {
-		Assert.assertTrue(this.binaryTreeService.isCousins(3, 50));
+		Assert.assertTrue("Test failed. We are wainting a true result.", 
+				this.binaryTreeService.isCousins(3, 50));
 	}
 }
