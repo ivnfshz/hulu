@@ -2,24 +2,32 @@ package com.hulu.excersice.binarytree.repository;
 
 import java.util.TreeMap;
 
+import javax.annotation.Resource;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Repository;
 
 import com.hulu.excersice.binarytree.bean.Node;
+import com.hulu.excersice.binarytree.config.AppConfigBinaryTree;
 
 @Repository
 public class BinaryTreeRepository {
-
+	
+	@Resource
+	private AppConfigBinaryTree appConfigNode;
+	
 	public static TreeMap<Integer, Node> parent = new TreeMap<Integer, Node>();
 
 	public Node getBinaryTree() {
 		Node binaryTree = null;
-		binaryTree = insert(binaryTree, 15);
-		binaryTree = insert(binaryTree, 66);
-		binaryTree = insert(binaryTree, 5);
-		binaryTree = insert(binaryTree, 3);
-		binaryTree = insert(binaryTree, 12);
-		binaryTree = insert(binaryTree, 75);
-		binaryTree = insert(binaryTree, 50);
+		try {
+			for(String node : appConfigNode.getNodes()){
+				int value = Integer.parseInt(node);
+				binaryTree = insert(binaryTree, value);
+			}
+		} catch (Exception e) {
+		}
 		return binaryTree;
 	}
 
