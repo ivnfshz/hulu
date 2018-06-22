@@ -16,7 +16,7 @@ This project implements the following provided libraries:
 
 * [Spring Boot](https://spring.io/projects/spring-boot)
 * [Spring Testing](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html) 
-> Which also contains other provided libraries
+	> Which also contains other provided libraries
 
 * [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/)
 
@@ -75,7 +75,7 @@ Enter node A:
 - This is what the binary tree looks like in a simple draw:
 
 ```bash
-  	15      <-- root.
+  15        <-- root.
      /    \
    5       66  
   / \     /  \
