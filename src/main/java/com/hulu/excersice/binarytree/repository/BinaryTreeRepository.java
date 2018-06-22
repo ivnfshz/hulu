@@ -4,8 +4,6 @@ import java.util.TreeMap;
 
 import javax.annotation.Resource;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Repository;
 
 import com.hulu.excersice.binarytree.bean.Node;
