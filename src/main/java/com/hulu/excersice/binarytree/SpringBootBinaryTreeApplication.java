@@ -24,6 +24,7 @@ public class SpringBootBinaryTreeApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		this.binaryTreeService.printBinaryTree();
+		this.binaryTreeService.promptEnterKey();
 		String message = this.binaryTreeService.guessCousins();
 		if(StringUtils.isBlank(message)){
 			message = "An error has occured";
