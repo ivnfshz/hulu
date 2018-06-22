@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +19,8 @@ public class BinaryTreeService {
 	private Scanner scanner;
 	private LinkedList<Node> root = new LinkedList<Node>();
 	private TreeMap<Integer, Integer> nodes = new TreeMap<Integer, Integer>();
+	private final static Logger LOGGER = Logger.getLogger(BinaryTreeService.class.getName());
+
 
 	@Autowired
 	private BinaryTreeRepository binaryTreeRepository;
@@ -51,12 +55,12 @@ public class BinaryTreeService {
 			else
 				message = nodeA + " is NOT cousin of " + nodeB;
 		} catch (Exception e) {
-			// TODO: handle exception
+			LOGGER.log(Level.SEVERE, e.getMessage());
 		}
 		return message;
 	}
 
-	private boolean isCousins(int a, int b) {
+	public boolean isCousins(int a, int b) {
 		traverseTree(this.binaryTreeRepository.getBinaryTree());
 		if (this.nodes.get(a) == this.nodes.get(b)
 				&& BinaryTreeRepository.parent.get(a) != BinaryTreeRepository.parent.get(b))
@@ -65,7 +69,7 @@ public class BinaryTreeService {
 			return false;
 	}
 
-	private void traverseTree(Node tree) {
+	public void traverseTree(Node tree) {
 		if (tree == null)
 			return;
 		if (tree.getParent() == null)
