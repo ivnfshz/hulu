@@ -27,6 +27,6 @@ public class BinaryTreeServiceTests {
 
 	@Test
 	public void isCousinsEqualsTrue() {
-		Assert.assertFalse(this.binaryTreeService.isCousins(3, 50));
+		Assert.assertTrue(this.binaryTreeService.isCousins(3, 50));
 	}
 }
