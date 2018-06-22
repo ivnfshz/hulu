@@ -143,4 +143,4 @@ mvn test
 src/main/resources/nodes
 ```
 > It contains a key/value format. 
-> You will need to edit **root.nodes** key that you will be able to change.
+> You will need to edit the value of the **root.nodes** key at your convenience
